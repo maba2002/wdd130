@@ -1,126 +1,136 @@
-body{
+body {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     width: 100%;
-    margin: 0%;
+    margin: 0;
     overflow-x: hidden;
-
+    font-family: 'Roboto', sans-serif; /* Added font-family */
 }
-header{
+
+header {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-between; /* Updated for better spacing */
     background-color: aqua;
     width: 100%;
-    padding: 0.5%;
+    padding: 1%; /* Increased padding for a better look */
 }
-header img{
-    width: 80px; /* logo on the left */
+
+header img {
+    width: 80px; /* Logo on the left */
 }
-nav a{
+
+nav {
+    display: flex;
+    gap: 20px; /* Added spacing between nav items */
+}
+
+nav a {
     color: black;
     text-decoration: none;
-    padding-right: 10px;
 }
-main{
+
+main {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     padding-bottom: 10px;
-    
 }
 
-.hero{
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
-    grid-template-areas: "main";
-    padding-bottom: 3%;
-    width: 100%;
-    padding-top: 3%;
-}
-.client1{
-    grid-area: main;
+.hero {
+    display: flex; /* Changed from grid to flex for hero section */
     width: 100%;
 }
-.articlediv{
-    grid-area: main;
+
+.client1 {
+    width: 50%; /* Adjust width as needed */
+}
+
+.articlediv {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    position: relative;
-   
-    
+    padding: 10px; /* Added padding */
 }
-article{
-    background-color: rgba(255, 255, 255, 0.728);
-    
+
+article {
+    background-color: rgba(255, 255, 255, 0.8); /* Adjusted opacity */
+    padding: 20px; /* Added padding for better spacing */
 }
-h1{
-    color:white;
+
+h1 {
+    color: white;
 }
-article p{
-    padding:2%;
+
+article p {
+    padding: 2%;
 }
-.client2{
+
+.client2 {
     width: 100px;
-    float: right;
     margin-left: 5px;
     width: 20%;
 }
-.history{
-    display:flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-.pictures{
+
+.history {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-}
-.pictures div img{
-    width: 30%;
-}
-.pics{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    gap:50px;
+    padding: 20px; /* Added padding for better layout */
 }
 
-footer{
+.pictures {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.pics {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    align-items: center;
+    justify-content: center; /* Centered images */
+    flex-wrap: wrap;
+    gap: 20px; /* Adjusted gap */
+}
+
+.pics figure {
+    text-align: center; /* Center caption under images */
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; /* Updated for better spacing */
     align-items: center;
     padding: 2%;
     background-color: aqua;
     width: 100%;
 }
-footer p{
-    padding-right: 80px;
+
+footer p {
+    padding-right: 80px; /* Adjust spacing */
 }
-footer a{
-    
+
+footer a {
     background-color: white;
 }
-.social-media{
+
+.social-media {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-evenly;
-    gap:10px;
+    gap: 10px;
 }
 
-.social-media a img{
-    width:30px;
+.social-media a img {
+    width: 30px;
 }
