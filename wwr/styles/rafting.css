@@ -1,136 +1,185 @@
-body {
+body{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 100%;
-    margin: 0;
-    overflow-x: hidden;
-    font-family: 'Roboto', sans-serif; /* Added font-family */
-}
+    
 
-header {
+}
+header{
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 0.3fr 0.7fr ;
+    background-color: rgb(25, 224, 144);
+    width: 100%;
+    padding: 0.5%;
+    align-items: center;
+    justify-content: center;
+
+}
+.articlediv h1{
+    color:black
+}
+nav{
+    grid-column: 2 / 3;
+    justify-content: center;
+    margin: auto;
     display: flex;
     flex-direction: row;
-    align-items: center;
-    justify-content: space-between; /* Updated for better spacing */
-    background-color: aqua;
-    width: 100%;
-    padding: 1%; /* Increased padding for a better look */
-}
+    padding: 10px;
 
-header img {
-    width: 80px; /* Logo on the left */
 }
-
-nav {
-    display: flex;
-    gap: 20px; /* Added spacing between nav items */
+nav a:hover{
+    background-color: rgb(160, 133, 233);
+    color: white;
 }
-
-nav a {
+header img{
+    width: 80px;
+    grid-column: 1 / 2;
+    margin: auto;
+    
+}
+nav a{
     color: black;
     text-decoration: none;
+    padding-right: 10px;
+    padding: 10px;
 }
-
-main {
+main{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     padding-bottom: 10px;
+    margin: 0%;
+    
 }
 
-.hero {
-    display: flex; /* Changed from grid to flex for hero section */
+.hero{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "main";
+    padding-bottom: 3%;
     width: 100%;
-}
+    padding-top: 3%;
+    align-items: center;
+    margin: 0%;
 
-.client1 {
-    width: 50%; /* Adjust width as needed */
-}
 
-.articlediv {
+}
+.client1{
+    grid-area: main;
+    width: 100%;
+    align-items: center;
+}
+.articlediv{
+    grid-area: main;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 10px; /* Added padding */
+    position: relative;
+   
+    
 }
-
-article {
-    background-color: rgba(255, 255, 255, 0.8); /* Adjusted opacity */
-    padding: 20px; /* Added padding for better spacing */
+article{
+    background-color: rgba(255, 255, 255, 0.728);
+    
 }
-
-h1 {
-    color: white;
+h1{
+    color:white;
 }
-
-article p {
-    padding: 2%;
+article p{
+    padding:2%;
 }
-
-.client2 {
+.client2{
     width: 100px;
+    float: right;
     margin-left: 5px;
     width: 20%;
 }
+.history{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    
 
-.history {
+}
+.history div{
+    padding: 10px;
+
+}
+
+.history div img{
+    width: 50%;
+}
+
+.history-img{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 20px; /* Added padding for better layout */
-}
-
-.pictures {
-    display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
 
-.pics {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center; /* Centered images */
-    flex-wrap: wrap;
-    gap: 20px; /* Adjusted gap */
 }
-
-.pics figure {
-    text-align: center; /* Center caption under images */
-}
-
-footer {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between; /* Updated for better spacing */
-    align-items: center;
-    padding: 2%;
-    background-color: aqua;
+.history-img img{
+    align-self: center;  /*center image vertically */
     width: 100%;
+    max-height: 300px;
+    object-fit: contain;
 }
 
-footer p {
-    padding-right: 80px; /* Adjust spacing */
+.pictures{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
 }
-
-footer a {
-    background-color: white;
+.pics figure img{ 
+    width: 100px;
+    height: auto; /* maitain aspect ratio */
+    object-fit: cover;
 }
-
-.social-media {
+.pics{
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-evenly;
-    gap: 10px;
+    width: 100%;
+    
 }
 
-.social-media a img {
-    width: 30px;
+/*.pics img{
+    width: 20%;
+}*/
+
+footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+   
+    background-color: aqua;
+    width: 100%;
+}
+footer p{
+    padding-right: 80px;
+}
+footer a{
+    
+    background-color: white;
+}
+.social-media{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    gap:10px; /* Adjust the gap as needed */
+}
+
+.social-media a img{
+    width:30px;
 }
