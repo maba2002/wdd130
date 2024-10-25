@@ -3,6 +3,8 @@ body{
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    margin: 0%;
+    width: 100%;
     
 
 }
@@ -11,10 +13,13 @@ header{
     grid-template-rows: 1fr;
     grid-template-columns: 0.3fr 0.7fr ;
     background-color: rgb(25, 224, 144);
+    top:0%;
+    position: fixed;
     width: 100%;
     padding: 0.5%;
     align-items: center;
     justify-content: center;
+
 
 }
 .articlediv h1{
@@ -51,7 +56,9 @@ main{
     align-items: center;
     justify-content: center;
     padding-bottom: 10px;
-    margin: 0%;
+    margin-top: 10%;
+    
+    width: 100%;
     
 }
 
@@ -88,7 +95,7 @@ article{
     
 }
 h1{
-    color:white;
+    color:black;
 }
 article p{
     padding:2%;
@@ -182,4 +189,75 @@ footer a{
 
 .social-media a img{
     width:30px;
+}
+.info{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    background-color: rgb(221, 236, 236);
+}
+
+.map{
+    
+    height: 90%;
+}
+.map iframe{
+    width: 500px;
+    height: 300px;
+    border-style: none;
+
+}
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 6%;
+    width: 40%;
+    background-color: rgb(200, 220, 220);
+    margin-top: 5%;
+    border-radius: 5%;
+
+
+}
+form div{
+    padding: 2%;
+    margin-left: 0%;
+}
+
+.purpose{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content:left ;
+    padding: 10%;
+}
+
+#name{
+    width: 50%;
+    margin-left: 10%;
+}
+
+#email{
+    width: 50%;
+    margin-left: 10%;
+}
+
+#message{
+    width: 50%;
+    margin-left: 10%;
+}
+
+.employees{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.employees img{
+    width: 200px;
+    height: 150px;
 }
